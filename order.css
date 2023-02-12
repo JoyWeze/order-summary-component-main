@@ -1,0 +1,121 @@
+a, button {
+  cursor: pointer;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-image: url(./images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  position: relative;
+  font-family: "Red Hat Display";
+}
+body::after {
+  content: "";
+  background-color: hsl(225, 100%, 94%);
+  width: 100vw;
+  height: 100vh;
+  top: 0px;
+  bottom: 0px;
+  position: fixed;
+  opacity: 0.5;
+  z-index: -1;
+}
+.summary-card {
+  max-width: 370px;
+  width: 95%;
+  background-color: white;
+  border-radius:20px;
+  box-shadow: 0px 15px 8px hsl(225deg 100% 94%);
+}
+.order-image {
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+}
+h1 {
+  font-weight: 900;
+  margin:0px;
+}
+.main-text {
+  font-weight: 500;
+}
+.plan {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+  
+  background-color: hsl(225, 100%, 98%);
+  margin-top:42px;
+  margin-bottom:42px;
+  padding: 20px;
+  border-radius: 10px;
+}
+.duration{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:10px;
+}
+.annual-plan{
+  margin:0px;
+}
+.bold-text {
+  font-weight: 700;
+}
+.change-link{
+    display:flex;
+    justify-content:flex-end;
+    font-weight: 700;
+}
+button{
+  width: 100%;
+    padding: 15px;
+    background-color: hsl(245, 75%, 52%);
+    color:white;
+    border: 0px;
+    border-radius: 10px;
+    box-shadow: 0px 15px 8px hsl(225deg 100% 94%);
+}
+.cancel-order{
+    width: 100%;
+    padding: 25px 0 17px 0;
+    display: inline-block;
+    color:hsl(224, 23%, 55%);
+    font-weight: 700;
+}
+.card-text{
+    margin: 36px;
+}
+.cancel-order{
+  text-decoration: none;
+}
+.change-link:active{
+color:hsl(224, 23%, 55%) ;
+}
+.change-link:hover{
+  color: hsl(224, 23%, 55%);
+}
+button:active{
+  background-color: hsl(224, 23%, 55%);
+}
+button:hover{
+  background-color: hsl(224, 23%, 55%);
+}
+.cancel-order:active{
+ color: hsl(224, 23%, 55%);
+}
+.cancel-order:hover{
+  color: hsl(224, 23%, 55%);
+}
